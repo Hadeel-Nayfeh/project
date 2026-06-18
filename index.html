@@ -42,7 +42,7 @@
       <i class="fa-solid fa-bars" style="color: rgb(0, 0, 0);"></i>
     </div>
     <div class="logo ">
-      <img  class= "h-3 w-40 mr-20 " src="./assets/img/Logo(1).svg" alt="logo">
+      <img  class= "h-3 w-40 md:mr-20 mr-0 " src="./assets/img/Logo(1).svg" alt="logo">
     </div>
     <div class="icons hidden md:block ">
       <ul class="flex gap-4  ">
@@ -70,20 +70,129 @@
     </ul>
   </div>
 </header>
-<section class="h-[80vh] bg-[url('../img/herosec.png')] bg-cover bg-top-center  flex justify-center items-center">
+<section class="h-[80vh] bg-[url('../img/herosec.png')] bg-cover bg-center  flex justify-center items-center">
 <div class=" container mx-auto md:px-30  flex  flex-col  text-white  gap-4 justify-center items-center md:items-start h-full w-full  ">
-  <h2 class="  text-4xl/14 md:text-5xl/14 font-200 text-center p">Your Cozy Era</h2>
-  <span class=" flex flex-col text-l md:text-xl font-100 px-4 text-center mb-4" >Get peak comfy-chic <span >with new winter essentials.</span></span>
-  <a href="#" class="  mx-7 text-center bg-white text-black py-3 px-8 md:px-18 " > shop now</a>
+  <h2 class="  text-4xl/14 md:text-5xl/14 font-extralight text-center p">Your Cozy Era</h2>
+  <span class=" flex flex-col text-lg md:text-xl font-thin px-4 text-center mb-4" >Get peak comfy-chic <span >with new winter essentials.</span></span>
+  <button
+          class="bg-white mx-8 text-black px-12 py-4 tracking-[1.4px] uppercase hover:bg-black hover:text-white transition"
+        >
+          Shop now
+        </button>
 </div>
 </section>
-<section>
+<section class=" bg-[#F0F0F0]">
 <div>
-  <h2>Shop by Category</h2>
-  <div>
-    <div></div>
+  <h2 class=" pt-10 md:pt-20 pb-5 md:pb-10 text-center  text-l md:text-2xl font-100 text-[#262626]">Shop by Category</h2>
+  <div class="container mx-auto px-4 md:px-0">
+    <div class="grid  grid-cols-2   md:grid-cols-3 lg:grid-cols-6  gap-2 overflow-x-auto whitespace-nowrap scrollbar-hide">
+      <div class=" flex flex-col ">
+        <img src="./assets/img/category1.png" alt="shirt" class="w-full ">
+        <h3 class="text-center text-sm font-100 mt-2"><a  class="underline " href="#">shirts</a></h3>
+      </div>
+      <div class=" flex flex-col ">
+        <img src="./assets/img/category2.png" alt="shirt" class="w-full ">
+        <h3 class="text-center text-sm font-100 mt-2"><a   class="underline "href="#">DENIM</a></h3>
+      </div><div class=" flex flex-col ">
+        <img src="./assets/img/category3.png" alt="shirt" class="w-full  ">
+        <h3 class="text-center text-sm font-100 mt-2"><a  class="underline " href="#">TEES</a></h3>
+      </div><div class=" flex flex-col ">
+        <img src="./assets/img/category4.png" alt="shirt" class="w-full  ">
+        <h3 class="text-center text-sm font-100 mt-2"><a  class="underline " href="#">PANTS</a></h3>
+      </div><div class=" flex flex-col ">
+        <img src="./assets/img/category5.png" alt="shirt" class="w-full  ">
+        <h3 class="text-center text-sm font-100 mt-2"><a  class="underline " href="#">SWEATERS</a></h3>
+      </div><div class=" flex flex-col ">
+        <img src="./assets/img/category6.png" alt="shirt" class="w-full ">
+        <h3 class="text-center text-sm font-100 mt-2"><a  class="underline " href="#">OUTERWEAR</a></h3>
+      </div>
+    </div>
   </div>
 </div>
+</section>
+<section class=" bg-[#F0F0F0]">
+  <div class="container mx-auto grid  pt-6 grid-cols-1 md:grid-cols-3 gap-3">
+     <div class="relative overflow-hidden group">
+      <img
+        src="./assets/img/new1.png"
+        alt="New Arrivals"
+        class="w-full h-full  transition duration-500 group-hover:scale-105"
+      />
+
+      <div class="absolute inset-0 bg-black/20"></div>
+
+      <div class="absolute inset-0 flex flex-col items-center justify-center text-white">
+        <h2 class="  text-3xl md:text-5xl font-light mb-8">
+          New Arrivals
+        </h2>
+
+        <button
+          class="bg-white text-black px-8  md:px-12 py-4 tracking-[1.4px] uppercase hover:bg-black hover:text-white transition"
+        >
+          Shop The Latest
+        </button>
+      </div>
+    </div>
+     <div class="relative overflow-hidden group">
+      <img
+        src="./assets/img/new2.png"
+        alt="Best Sellers"
+        class="w-full h-full object-cover transition duration-500 group-hover:scale-105"
+      />
+
+      <div class="absolute inset-0 bg-black/10"></div>
+
+      <div class="absolute inset-0 flex flex-col items-center justify-center text-white">
+        <h2 class="  text-3xl md:text-5xl font-light mb-8">
+          Best-Sellers
+        </h2>
+
+        <button
+          class="bg-white text-black px-8  md:px-12 py-4 tracking-[1.4px] uppercase hover:bg-black hover:text-white transition"
+        >
+          Shop Your Favorites
+        </button>
+      </div>
+    </div>
+    <div class="relative overflow-hidden group">
+      <img
+        src="./assets/img/new3.png"
+        alt="Holiday Outfit"
+        class="w-full h-full object-cover transition duration-500 group-hover:scale-105"
+      />
+
+      <div class="absolute inset-0 bg-black/20"></div>
+
+      <div class="absolute inset-0 flex flex-col items-center justify-center text-white">
+        <h2 class="text-3xl md:text-5xl font-light mb-8 text-center">
+          The Holiday Outfit
+        </h2>
+
+        <button
+          class="bg-white text-black px-8  md:px-12 py-4 tracking-[1.4px] uppercase hover:bg-black hover:text-white transition"
+        >
+          Shop Now
+        </button>
+      </div>
+    </div>
+  </div>
+
+</section>
+<section class="py-16 bg-[#F0F0F0]">
+  <div class="container mx-auto px-4 bg-[url('../img/learn.png')]  bg-cover bg-center h-[40vh] flex items-center justify-center">
+      <div class="   flex flex-col items-center justify-center text-center text-white px-4">
+        <h2 class="text-3xl md:text-5xl font-extralight mb-4">
+          We’re on a Mission To Clean Up the Industry
+        </h2>
+        <p class="text-sm md:text-lg mb-8">
+          Read about our progress in our latest Impact Report.
+        </p>
+        <button
+          class="bg-white text-black px-10 py-3 uppercase tracking-[1.4px] text-sm hover:bg-black hover:text-white transition" >
+          Learn More
+        </button>
+      </div>
+  </div>
 </section>
 </body>
 </html
