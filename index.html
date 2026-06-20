@@ -28,8 +28,27 @@
     <p class="text-white font-inter text-xs/4 hidden md:block">USD</p>
    </div>
   </div>
-  <div class=" bg-[#F0F0F0] flex justify-between items-center md:px-18 py-3 md:py-0 border-b-2 border-[#DDDBDC] ">
-    <div class="nav hidden md:block ">
+  <nav class="relative bg-[#F0F0F0] border-b-2 border-[#DDDBDC]">
+  <div class="container mx-auto  flex justify-between items-center  py-5 md:py-0  ">
+      <div class="absolute inset-y-0 right-0 flex items-center md:hidden">
+        <button
+          type="button"
+          command="--toggle"
+          commandfor="mobile-menu"
+          class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-700 hover:bg-gray-100"
+        >
+          <span class="sr-only">Open menu</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="size-6 in-aria-expanded:hidden">
+            <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+          </svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="size-6 not-in-aria-expanded:hidden">
+            <path d="M6 18 18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+      <div class="hidden md:flex items-center gap-6 ml-12 text-sm text-gray-700">
+
+         <div class="nav hidden md:block ">
       <ul class="flex gap-6  font-extralight text-sm/6 ">
         <li class="hover:border-b-3 py-4"><a  href="#">Women</a></li> 
         <li class="hover:border-b-3 py-4"><a  href="#">Men</a></li>          
@@ -38,23 +57,32 @@
 
       </ul>
     </div>
-     <div class="md:hidden sm:block px-4 ">
-      <i class="fa-solid fa-bars" style="color: rgb(0, 0, 0);"></i>
-    </div>
-    <div class="logo ">
+
+      </div>
+      <div class="logo ">
       <img  class= "h-3 w-40 md:mr-20 mr-0 " src="./assets/img/Logo(1).svg" alt="logo">
     </div>
-    <div class="icons hidden md:block ">
+       <div class="icons hidden md:block ">
       <ul class="flex gap-4  ">
       <li><i class="fa-solid fa-magnifying-glass fa-lg" style="color: rgb(0, 0, 0);"></i></li>
      <li><i class="fa-regular fa-user fa-lg" style="color: rgb(0, 0, 0);"></i></li>
     <li><i class="fa-solid fa-cart-shopping fa-lg" style="color: rgb(0, 0, 0);"></i></li>  
     </ul>
     </div>
-    <div class="md:hidden sm:block px-4 ">
-      <i class="fa-solid fa-cart-shopping fa-lg" style="color: rgb(0, 0, 0);"></i>
+
     </div>
-  </div>
+  <el-disclosure id="mobile-menu" hidden>
+    <div class="border-t bg-white">
+      <div class="space-y-1 px-4 py-4">
+
+        <a href="#" class="block py-2 font-medium">Women</a>
+        <a href="#" class="block py-2">Men</a>
+        <a href="#" class="block py-2">About</a>
+        <a href="#" class="block py-2">Everworld Stories</a>
+      </div>
+    </div>
+  </el-disclosure>
+</nav>
   <div class="  overflow-x-auto whitespace-nowrap scrollbar-hide px-2 ">
     <ul class="flex gap-6  text-sm/6 font-extralight justify-start md:justify-center ">
       <li class="hover:text-[#D0021B] py-5"><a href="#">Holiday Gifting</a></li>
@@ -420,6 +448,72 @@
 
   </div>
 </section>
+<section class="py-16   bg-[#F0F0F0]">
+
+  <div class="max-w-7xl mx-auto px-4">
+
+    <h2 class="text-center text-2xl mb-3">
+      Everlane On You
+    </h2>
+
+    <p class="text-center text-sm text-gray-500 mb-10">
+      Share your latest look with #EverlaneOnYou
+    </p>
+
+    <div class="relative">
+
+      <!-- Left Arrow -->
+      <button
+        class="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 items-center justify-center bg-white shadow">
+        ←
+      </button>
+
+      <div
+        class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+
+        <img
+          src="./assets/img/lan1.png"
+          class="w-full aspect-square object-cover"
+          alt=""
+        />
+
+        <img
+          src="./assets/img/lan2.png"
+          class="w-full aspect-square object-cover"
+          alt=""
+        />
+
+        <img
+          src="./assets/img/lan3.png"
+          class="w-full aspect-square object-cover"
+          alt=""
+        />
+
+        <img
+          src=""
+          class="w-full aspect-square object-cover"
+          alt=""
+        />
+
+        <img
+          src="images/look5.jpg"
+          class="w-full aspect-square object-cover"
+          alt=""
+        />
+
+      </div>
+
+      <!-- Right Arrow -->
+      <button
+        class="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 items-center justify-center bg-white shadow">
+        →
+      </button>
+
+    </div>
+
+  </div>
+
+</section>
 <section class="py-16  bg-[#F0F0F0]">
   <div
     class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-10 justify-center items-center ">
@@ -560,5 +654,12 @@
   </div>
 
 </footer>
+
+
+
+
+<!-- NAV -->
+
+<script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
 </body>
 </html>
