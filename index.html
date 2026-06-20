@@ -150,12 +150,12 @@
       <div class="absolute inset-0 bg-black/20"></div>
 
       <div class="absolute inset-0 flex flex-col items-center justify-center text-white">
-        <h2 class="  text-3xl md:text-5xl font-light mb-8">
+        <h2 class="  text-3xl lg:text-5xl font-light mb-8">
           <a href="#"></a>New Arrivals</a>
         </h2>
 
         <button
-          class="bg-white text-black px-8  md:px-12 py-4 tracking-[1.4px] uppercase hover:bg-black hover:text-white transition"
+          class="bg-white text-black px-8  lg:px-12 py-4 tracking-[1.4px]  hover:bg-black hover:text-white transition"
         >
           <a href="#">Shop The Latest</a>
         </button>
@@ -171,12 +171,12 @@
       <div class="absolute inset-0 bg-black/10"></div>
 
       <div class="absolute inset-0 flex flex-col items-center justify-center text-white">
-        <h2 class="  text-3xl md:text-5xl font-light mb-8">
+        <h2 class="  text-3xl lg:text-5xl font-light mb-8">
           <a href="#">Best-Sellers</a>
         </h2>
 
         <button
-          class="bg-white text-black px-8  md:px-12 py-4 tracking-[1.4px] uppercase hover:bg-black hover:text-white transition"
+          class="bg-white text-black px-8  lg:px-12 py-4 tracking-[1.4px]  hover:bg-black hover:text-white transition"
         >
           Shop Your Favorites
         </button>
@@ -192,12 +192,12 @@
       <div class="absolute inset-0 bg-black/20"></div>
 
       <div class="absolute inset-0 flex flex-col items-center justify-center text-white">
-        <h2 class="text-3xl md:text-5xl font-light mb-8 text-center">
+        <h2 class="text-3xl lg:text-5xl font-light mb-8 text-center">
           The Holiday Outfit
         </h2>
 
         <button
-          class="bg-white text-black px-8  md:px-12 py-4 tracking-[1.4px] uppercase hover:bg-black hover:text-white transition"
+          class="bg-white text-black px-8  lg:px-12 py-4 tracking-[1.4px] uppercase hover:bg-black hover:text-white transition"
         >
           Shop Now
         </button>
@@ -367,7 +367,7 @@
           </div>
         </div>
 
-        <!-- Image -->
+        
         <div class="h-[400px] md:h-[530px] lg:h-[665px]">
           <img
             src="./assets/img/ratsec.png"
@@ -450,33 +450,36 @@
 </section>
 <section class="py-16   bg-[#F0F0F0]">
 
-  <div class="max-w-7xl mx-auto px-4">
-
-    <h2 class="text-center text-2xl mb-3">
+  <div class="container mx-auto px-4">
+<div class="flex flex-col text-center items-center justify-center gap-1">
+    <h2 class="text-center text-3xl mb-8 ">
       Everlane On You
     </h2>
 
-    <p class="text-center text-sm text-gray-500 mb-10">
-      Share your latest look with #EverlaneOnYou
+    <p class="text-center text-sm text-[#262626] font-light  ">
+     Share your latest look with #EverlaneOnYou for a chance to be featured.
     </p>
+ <span> <a href="#" class="underline text-sm text-[#262626] font-light ">Add Your Photo</a></span>
+   </div> 
+   <div class="relative">
 
-    <div class="relative">
+      <button class="absolute -left-10 top-1/2  ">
+        <i class="fa-solid fa-chevron-left" style="color: rgb(0, 0, 0);"></i>
+     
 
-      <!-- Left Arrow -->
-      <button
-        class="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 items-center justify-center bg-white shadow">
-        ←
       </button>
 
       <div
-        class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
-
+        class="grid  grid-col-2  md:grid-cols-5 gap-4 ">
+        <div  class="flex relative">
         <img
           src="./assets/img/lan1.png"
-          class="w-full aspect-square object-cover"
+          class=" relative w-full aspect-square object-cover"
           alt=""
         />
-
+        <div class="  bg-white rounded-full p-10  absolute top-0 right-1" ><i class="  fa-brands fa-opencart"></i></div>
+        
+         </div>
         <img
           src="./assets/img/lan2.png"
           class="w-full aspect-square object-cover"
@@ -490,24 +493,26 @@
         />
 
         <img
-          src=""
+          src="./assets/img/lane4.png"
           class="w-full aspect-square object-cover"
           alt=""
         />
 
         <img
-          src="images/look5.jpg"
+          src="./assets/img/lane5.png"
           class="w-full aspect-square object-cover"
           alt=""
         />
 
       </div>
 
-      <!-- Right Arrow -->
-      <button
-        class="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 z-10 w-10 h-10 items-center justify-center bg-white shadow">
-        →
+      
+         <button class="absolute -right-10 top-1/2  ">
+        <i class="fa-solid fa-chevron-right" style="color: rgb(0, 0, 0);"></i>
+     
+
       </button>
+     
 
     </div>
 
