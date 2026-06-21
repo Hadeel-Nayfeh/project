@@ -805,6 +805,9 @@
   .bg-\[url\(\'\.\.\/img\/aboutsec4\.png\'\)\] {
     background-image: url('../img/aboutsec4.png');
   }
+  .bg-\[url\(\'\.\.\/img\/aboutsec5\.png\'\)\] {
+    background-image: url('../img/aboutsec5.png');
+  }
   .bg-\[url\(\'\.\.\/img\/herosec\.png\'\)\] {
     background-image: url('../img/herosec.png');
   }
