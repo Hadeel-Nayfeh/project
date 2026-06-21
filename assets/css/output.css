@@ -445,6 +445,12 @@
   .h-\[0vh\] {
     height: 0vh;
   }
+  .h-\[10vh\] {
+    height: 10vh;
+  }
+  .h-\[30vh\] {
+    height: 30vh;
+  }
   .h-\[40h\] {
     height: 40h;
   }
@@ -457,6 +463,9 @@
   .h-\[50vh\] {
     height: 50vh;
   }
+  .h-\[60vh\] {
+    height: 60vh;
+  }
   .h-\[70vh\] {
     height: 70vh;
   }
@@ -465,6 +474,9 @@
   }
   .h-\[80vh\] {
     height: 80vh;
+  }
+  .h-\[100vh\] {
+    height: 100vh;
   }
   .h-\[vh\] {
     height: vh;
@@ -763,11 +775,26 @@
   .bg-\[url\(\'\.\.\/img\/aboutsc1\.png\'\)\] {
     background-image: url('../img/aboutsc1.png');
   }
+  .bg-\[url\(\'\.\.\/img\/aboutse\.png\'\)\] {
+    background-image: url('../img/aboutse.png');
+  }
+  .bg-\[url\(\'\.\.\/img\/aboutse4\.png\'\)\] {
+    background-image: url('../img/aboutse4.png');
+  }
+  .bg-\[url\(\'\.\.\/img\/aboutsec\.png\'\)\] {
+    background-image: url('../img/aboutsec.png');
+  }
   .bg-\[url\(\'\.\.\/img\/aboutsec1\.\'\)\] {
     background-image: url('../img/aboutsec1.');
   }
   .bg-\[url\(\'\.\.\/img\/aboutsec1\.png\'\)\] {
     background-image: url('../img/aboutsec1.png');
+  }
+  .bg-\[url\(\'\.\.\/img\/aboutsec3\.png\'\)\] {
+    background-image: url('../img/aboutsec3.png');
+  }
+  .bg-\[url\(\'\.\.\/img\/aboutsec4\.png\'\)\] {
+    background-image: url('../img/aboutsec4.png');
   }
   .bg-\[url\(\'\.\.\/img\/herosec\.png\'\)\] {
     background-image: url('../img/herosec.png');
@@ -1640,6 +1667,11 @@
   .lg\:order-1 {
     @media (width >= 64rem) {
       order: 1;
+    }
+  }
+  .lg\:h-\[70vh\] {
+    @media (width >= 64rem) {
+      height: 70vh;
     }
   }
   .lg\:w-\[20\%\] {
