@@ -594,6 +594,9 @@
   .h-\[500px\] {
     height: 500px;
   }
+  .h-\[vh\] {
+    height: vh;
+  }
   .h-auto {
     height: auto;
   }
