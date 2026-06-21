@@ -324,6 +324,9 @@
   .mx-20 {
     margin-inline: calc(var(--spacing) * 20);
   }
+  .mx-30 {
+    margin-inline: calc(var(--spacing) * 30);
+  }
   .mx-35 {
     margin-inline: calc(var(--spacing) * 35);
   }
@@ -451,6 +454,9 @@
   .h-\[10vh\] {
     height: 10vh;
   }
+  .h-\[20vh\] {
+    height: 20vh;
+  }
   .h-\[30vh\] {
     height: 30vh;
   }
@@ -463,8 +469,14 @@
   .h-\[40vh\] {
     height: 40vh;
   }
+  .h-\[50\] {
+    height: 50;
+  }
   .h-\[50vh\] {
     height: 50vh;
+  }
+  .h-\[55vh\] {
+    height: 55vh;
   }
   .h-\[60vh\] {
     height: 60vh;
@@ -591,6 +603,9 @@
   }
   .w-\[500\%\] {
     width: 500%;
+  }
+  .w-\[full\] {
+    width: full;
   }
   .w-full {
     width: 100%;
@@ -1458,6 +1473,16 @@
       display: none;
     }
   }
+  .md\:h-\[70vh\] {
+    @media (width >= 48rem) {
+      height: 70vh;
+    }
+  }
+  .md\:h-\[vh\] {
+    @media (width >= 48rem) {
+      height: vh;
+    }
+  }
   .md\:w-\[30\%\] {
     @media (width >= 48rem) {
       width: 30%;
@@ -1684,6 +1709,16 @@
       order: 1;
     }
   }
+  .lg\:mx-40 {
+    @media (width >= 64rem) {
+      margin-inline: calc(var(--spacing) * 40);
+    }
+  }
+  .lg\:h-\[50vh\] {
+    @media (width >= 64rem) {
+      height: 50vh;
+    }
+  }
   .lg\:h-\[70vh\] {
     @media (width >= 64rem) {
       height: 70vh;
@@ -1858,6 +1893,36 @@
       letter-spacing: 1px;
     }
   }
+  .xl\:h-\[0vh\] {
+    @media (width >= 80rem) {
+      height: 0vh;
+    }
+  }
+  .xl\:h-\[5\] {
+    @media (width >= 80rem) {
+      height: 5;
+    }
+  }
+  .xl\:h-\[50\] {
+    @media (width >= 80rem) {
+      height: 50;
+    }
+  }
+  .xl\:h-\[50vh\] {
+    @media (width >= 80rem) {
+      height: 50vh;
+    }
+  }
+  .xl\:h-\[60vh\] {
+    @media (width >= 80rem) {
+      height: 60vh;
+    }
+  }
+  .xl\:h-\[70vh\] {
+    @media (width >= 80rem) {
+      height: 70vh;
+    }
+  }
   .xl\:w-\[4\%\] {
     @media (width >= 80rem) {
       width: 4%;
@@ -1906,6 +1971,11 @@
   .xl\:py-5 {
     @media (width >= 80rem) {
       padding-block: calc(var(--spacing) * 5);
+    }
+  }
+  .xl\:text-left {
+    @media (width >= 80rem) {
+      text-align: left;
     }
   }
   .xl\:text-2xl {
