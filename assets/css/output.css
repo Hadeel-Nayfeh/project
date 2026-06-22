@@ -805,6 +805,10 @@
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 2px;
   }
+  .border-b-3 {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 3px;
+  }
   .border-\[\#2626262f\] {
     border-color: #2626262f;
   }
@@ -1464,6 +1468,12 @@
       @media (hover: hover) {
         text-decoration-line: underline;
       }
+    }
+  }
+  .active\:border-b-3 {
+    &:active {
+      border-bottom-style: var(--tw-border-style);
+      border-bottom-width: 3px;
     }
   }
   .in-aria-expanded\:hidden {
