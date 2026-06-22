@@ -522,8 +522,20 @@
   .table {
     display: table;
   }
+  .aspect-1\/4 {
+    aspect-ratio: 1/4;
+  }
+  .aspect-2\/4 {
+    aspect-ratio: 2/4;
+  }
   .aspect-3\/4 {
     aspect-ratio: 3/4;
+  }
+  .aspect-7\/4 {
+    aspect-ratio: 7/4;
+  }
+  .aspect-7\/8 {
+    aspect-ratio: 7/8;
   }
   .aspect-square {
     aspect-ratio: 1 / 1;
@@ -614,6 +626,12 @@
   }
   .max-h-173\.75 {
     max-height: calc(var(--spacing) * 173.75);
+  }
+  .max-h-\[392px\] {
+    max-height: 392px;
+  }
+  .max-h-full {
+    max-height: 100%;
   }
   .max-h-none {
     max-height: none;
@@ -746,6 +764,15 @@
   }
   .max-w-56\.5 {
     max-width: calc(var(--spacing) * 56.5);
+  }
+  .max-w-\[2\] {
+    max-width: 2;
+  }
+  .max-w-\[234\] {
+    max-width: 234;
+  }
+  .max-w-\[234px\] {
+    max-width: 234px;
   }
   .max-w-max {
     max-width: max-content;
@@ -2089,6 +2116,11 @@
       padding-bottom: calc(var(--spacing) * 10);
     }
   }
+  .md\:text-left {
+    @media (width >= 48rem) {
+      text-align: left;
+    }
+  }
   .md\:text-2xl {
     @media (width >= 48rem) {
       font-size: var(--text-2xl);
@@ -2297,6 +2329,11 @@
   .lg\:items-start {
     @media (width >= 64rem) {
       align-items: flex-start;
+    }
+  }
+  .lg\:justify-between {
+    @media (width >= 64rem) {
+      justify-content: space-between;
     }
   }
   .lg\:justify-center {
