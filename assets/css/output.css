@@ -345,6 +345,9 @@
   .m-3 {
     margin: calc(var(--spacing) * 3);
   }
+  .m-5 {
+    margin: calc(var(--spacing) * 5);
+  }
   .m-7 {
     margin: calc(var(--spacing) * 7);
   }
@@ -365,6 +368,9 @@
   }
   .mx-3 {
     margin-inline: calc(var(--spacing) * 3);
+  }
+  .mx-5 {
+    margin-inline: calc(var(--spacing) * 5);
   }
   .mx-7 {
     margin-inline: calc(var(--spacing) * 7);
@@ -663,11 +669,23 @@
   .w-\[0\%\] {
     width: 0%;
   }
+  .w-\[3\%\] {
+    width: 3%;
+  }
   .w-\[4\%\] {
     width: 4%;
   }
+  .w-\[5\] {
+    width: 5;
+  }
   .w-\[8\] {
     width: 8;
+  }
+  .w-\[30\%\] {
+    width: 30%;
+  }
+  .w-\[35\%\] {
+    width: 35%;
   }
   .w-\[40\%\] {
     width: 40%;
@@ -701,6 +719,9 @@
   }
   .w-\[100\] {
     width: 100;
+  }
+  .w-\[300\%\] {
+    width: 300%;
   }
   .w-fit {
     width: fit-content;
