@@ -100,7 +100,213 @@
 
     </ul>
   </nav>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
+    <main>
+        <section>
+            <div class="  container mx-auto grid grid-cols-1 lg:grid-cols-3 my-7 ">
+                <div class="grid grid-cols-2 col-span-2 gap-5 ml-50 mr-10 relative ">
+                    <img src="./assets/img/product1.png">
+                      <img src="./assets/img/product2.png">
+                        <img src="./assets/img/product3.png">
+                          <img src="./assets/img/product4.png">
+                            <img src="./assets/img/product5.png">
+                              <img src="./assets/img/product6.png">
+                              <span class="bg-white text-[#D0021B] text-xs font-extralight top-2 left-2 absolute p-2 ">30% off</span>
+                              
+                </div>
+                <div class="col-span-1 ">
+                  <div class="flex flex-col gap-2 border-b border-[#F5F4F4]">
+                    <h1 class="text-xs text-[#737373] font-extralight">Men / Outerwear - Jackets & Coats</h1>
+                    <div class="flex justify-between items-center ">
+                    <h2 class="text-2xl flex flex-col font-light">The ReWool® <span>Oversized Shirt Jacket</span></h2>
+                    <div>
+                      <span class="text-[#737373] line-through text-xl font-extralight">$238</span>
+                      <span class="text-xl font-extralight">$167</span>
+                    </div>
+                    </div>
+                    <div class="flex gap-2 pb-5">
+                      <div>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      <span class="text-[#737373]">5.0 (2 Reviews)</span>
+                    </div>
+                  </div>
+                  <div class="mb-5">
+                    <div class="flex gap-3">
+                      <h3>Color</h3>
+                      <span>Black / Olive</span>
+                    </div>
+                    <div class="flex gap-1">
+                      <div class="w-6 h-6 rounded-full  bg-[#113081] hover:border-3 mb-2"></div>
+                      <div class="w-6 h-6 rounded-full  bg-[#7D3D0E] hover:border-3  mb-2"></div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="flex justify-between items-center">
+                      <h3>size</h3>
+                      <a href="#" class="underline">Size Guide</a>
+                    </div>
+                    <div class="flex  gap-3 my-3">
+           
+             <button class=" h-10 w-11.5 bg-[#F2F2F7] text-sm hover:bg-black hover:text-white">
+                S
+            </button>
+            <button class=" h-10 w-11.5 bg-[#F2F2F7] text-sm hover:bg-black hover:text-white">
+                M
+            </button>
+
+           <button class=" h-10 w-11.5 bg-[#F2F2F7] text-sm hover:bg-black hover:text-white">
+                L
+            </button>
+
+            <button class=" h-10 w-11.5 bg-[#F2F2F7] text-sm hover:bg-black hover:text-white">
+                XL
+            </button>
+
+            <button class=" h-10 w-11.5 bg-[#F2F2F7] text-sm hover:bg-black hover:text-white">
+                XXL
+            </button>
+
+            
+        </div>
+        <!-- Include this script tag or install `@tailwindplus/elements` via npm: -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script> -->
+<button command="show-modal" commandfor="drawer" class="rounded-md bg-gray-950/5 px-2.5 py-1.5 text-sm font-semibold text-gray-900 hover:bg-gray-950/10">Open drawer</button>
+<el-dialog>
+  <dialog id="drawer" aria-labelledby="drawer-title" class="fixed inset-0 size-auto max-h-none max-w-none overflow-hidden bg-transparent not-open:hidden backdrop:bg-transparent">
+    <el-dialog-backdrop class="absolute inset-0 bg-gray-500/75 transition-opacity duration-500 ease-in-out data-closed:opacity-0"></el-dialog-backdrop>
+
+    <div tabindex="0" class="absolute inset-0 pl-10 focus:outline-none sm:pl-16">
+      <el-dialog-panel class="ml-auto block size-full max-w-md transform transition duration-500 ease-in-out data-closed:translate-x-full sm:duration-700">
+        <div class="flex h-full flex-col overflow-y-auto bg-white shadow-xl">
+          <div class="flex-1 overflow-y-auto px-4 py-6 sm:px-6">
+            <div class="flex items-start justify-between">
+              <h2 id="drawer-title" class="text-lg font-medium text-gray-900">Shopping cart</h2>
+              <div class="ml-3 flex h-7 items-center">
+                <button type="button" command="close" commandfor="drawer" class="relative -m-2 p-2 text-gray-400 hover:text-gray-500">
+                  <span class="absolute -inset-0.5"></span>
+                  <span class="sr-only">Close panel</span>
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+                    <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="mt-8">
+              <div class="flow-root">
+                <ul role="list" class="-my-6 divide-y divide-gray-200">
+                  <li class="flex py-6">
+                    <div class="size-24 shrink-0 overflow-hidden rounded-md border border-gray-200">
+                      <img src="https://tailwindcss.com/plus-assets/img/ecommerce-images/shopping-cart-page-04-product-01.jpg" alt="Salmon orange fabric pouch with match zipper, gray zipper pull, and adjustable hip belt." class="size-full object-cover" />
+                    </div>
+
+                    <div class="ml-4 flex flex-1 flex-col">
+                      <div>
+                        <div class="flex justify-between text-base font-medium text-gray-900">
+                          <h3>
+                            <a href="#">Throwback Hip Bag</a>
+                          </h3>
+                          <p class="ml-4">$90.00</p>
+                        </div>
+                        <p class="mt-1 text-sm text-gray-500">Salmon</p>
+                      </div>
+                      <div class="flex flex-1 items-end justify-between text-sm">
+                        <p class="text-gray-500">Qty 1</p>
+
+                        <div class="flex">
+                          <button type="button" class="font-medium text-indigo-600 hover:text-indigo-500">Remove</button>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="flex py-6">
+                    <div class="size-24 shrink-0 overflow-hidden rounded-md border border-gray-200">
+                      <img src="https://tailwindcss.com/plus-assets/img/ecommerce-images/shopping-cart-page-04-product-02.jpg" alt="Front of satchel with blue canvas body, black straps and handle, drawstring top, and front zipper pouch." class="size-full object-cover" />
+                    </div>
+
+                    <div class="ml-4 flex flex-1 flex-col">
+                      <div>
+                        <div class="flex justify-between text-base font-medium text-gray-900">
+                          <h3>
+                            <a href="#">Medium Stuff Satchel</a>
+                          </h3>
+                          <p class="ml-4">$32.00</p>
+                        </div>
+                        <p class="mt-1 text-sm text-gray-500">Blue</p>
+                      </div>
+                      <div class="flex flex-1 items-end justify-between text-sm">
+                        <p class="text-gray-500">Qty 1</p>
+
+                        <div class="flex">
+                          <button type="button" class="font-medium text-indigo-600 hover:text-indigo-500">Remove</button>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="flex py-6">
+                    <div class="size-24 shrink-0 overflow-hidden rounded-md border border-gray-200">
+                      <img src="https://tailwindcss.com/plus-assets/img/ecommerce-images/shopping-cart-page-04-product-03.jpg" alt="Front of zip tote bag with white canvas, black canvas straps and handle, and black zipper pulls." class="size-full object-cover" />
+                    </div>
+
+                    <div class="ml-4 flex flex-1 flex-col">
+                      <div>
+                        <div class="flex justify-between text-base font-medium text-gray-900">
+                          <h3>
+                            <a href="#">Zip Tote Basket</a>
+                          </h3>
+                          <p class="ml-4">$140.00</p>
+                        </div>
+                        <p class="mt-1 text-sm text-gray-500">White and black</p>
+                      </div>
+                      <div class="flex flex-1 items-end justify-between text-sm">
+                        <p class="text-gray-500">Qty 1</p>
+
+                        <div class="flex">
+                          <button type="button" class="font-medium text-indigo-600 hover:text-indigo-500">Remove</button>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="border-t border-gray-200 px-4 py-6 sm:px-6">
+            <div class="flex justify-between text-base font-medium text-gray-900">
+              <p>Subtotal</p>
+              <p>$262.00</p>
+            </div>
+            <p class="mt-0.5 text-sm text-gray-500">Shipping and taxes calculated at checkout.</p>
+            <div class="mt-6">
+              <a href="#" class="flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-6 py-3 text-base font-medium text-white shadow-xs hover:bg-indigo-700">Checkout</a>
+            </div>
+            <div class="mt-6 flex justify-center text-center text-sm text-gray-500">
+              <p>
+                or
+                <button type="button" command="close" commandfor="drawer" class="font-medium text-indigo-600 hover:text-indigo-500">
+                  Continue Shopping
+                  <span aria-hidden="true"> &rarr;</span>
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </el-dialog-panel>
+    </div>
+  </dialog>
+</el-dialog>
+
+                  </div>
+                </div>
+            </div>
+        </section>
+     
+    </main>
   <footer class="bg-[#F0F0F0] py-16 ">
 <div class="  container mx-auto grid  text-center  grid-cols-1 lg:grid-cols-2 py-10 ">
   
@@ -196,5 +402,6 @@
   </div>
 
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script>
 </body>
 </html>
