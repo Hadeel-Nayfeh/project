@@ -518,6 +518,9 @@
   .h-10 {
     height: calc(var(--spacing) * 10);
   }
+  .h-19 {
+    height: calc(var(--spacing) * 19);
+  }
   .h-\[2px\] {
     height: 2px;
   }
@@ -620,8 +623,14 @@
   .w-25 {
     width: calc(var(--spacing) * 25);
   }
+  .w-35 {
+    width: calc(var(--spacing) * 35);
+  }
   .w-40 {
     width: calc(var(--spacing) * 40);
+  }
+  .w-50 {
+    width: calc(var(--spacing) * 50);
   }
   .w-\[10\] {
     width: 10;
@@ -738,6 +747,9 @@
   }
   .flex-col {
     flex-direction: column;
+  }
+  .flex-row {
+    flex-direction: row;
   }
   .flex-wrap {
     flex-wrap: wrap;
@@ -1080,6 +1092,9 @@
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
   }
+  .px-3 {
+    padding-inline: calc(var(--spacing) * 3);
+  }
   .px-4 {
     padding-inline: calc(var(--spacing) * 4);
   }
@@ -1106,6 +1121,9 @@
   }
   .px-36\.5 {
     padding-inline: calc(var(--spacing) * 36.5);
+  }
+  .py-0 {
+    padding-block: calc(var(--spacing) * 0);
   }
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
@@ -1711,6 +1729,11 @@
       height: 70vh;
     }
   }
+  .md\:w-7 {
+    @media (width >= 48rem) {
+      width: calc(var(--spacing) * 7);
+    }
+  }
   .md\:w-13 {
     @media (width >= 48rem) {
       width: calc(var(--spacing) * 13);
@@ -1724,6 +1747,16 @@
   .md\:w-22 {
     @media (width >= 48rem) {
       width: calc(var(--spacing) * 22);
+    }
+  }
+  .md\:w-50 {
+    @media (width >= 48rem) {
+      width: calc(var(--spacing) * 50);
+    }
+  }
+  .md\:w-70 {
+    @media (width >= 48rem) {
+      width: calc(var(--spacing) * 70);
     }
   }
   .md\:w-\[30\%\] {
